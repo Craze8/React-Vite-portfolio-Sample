@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from 'react';
-import mock1 from "../assets/images/mock1.png";
+import mocks from "../assets/images/mockimg.png";
 // import project2 from "../assets/images/proj11.png";
 // import project3 from "../assets/images/proj12.png";
 import { FaGithub } from "react-icons/fa";
@@ -10,12 +10,12 @@ import { FiChevronDown } from "react-icons/fi";
 
 const projects = [
     {
-        title: "IDOL FITNESS GYM",
+        title: "Idol Fitness Gym",
         desc : "Idol Fitness Gym is a web-based platform designed to streamline gym management. It offers appointment scheduling, membership tracking, and an intuitive interface for both clients and administrators. Built with Vanilla PHP, HTML/CSS, Bootstrap, and MySQL, this system enhances efficiency in handling gym operations.",
         devstack: "Vanilla PHP, HTML/CSS, Bootstrap, MYSQL",
         link: "#",
         git: "#",
-         src: mock1 ,
+         src: mocks ,
         type: "Gym Appoinment and Membership Management Program"
     },
     {
@@ -87,13 +87,13 @@ export const Portfolio = () => {
                                     transition={{ duration: 0.3 }}
                                     className='px-6 pb-6 bg-black/20 border border-white/10'
                                     >
-                                        <div className='flex flex-col md:flex-row gap-8'>
+                                        <div className='flex flex-col md:flex-row gap-8 mt-5 '>
                                             <img
                                             src={project.src}
                                             alt={project.title}
                                             className='w-full md:w-1/2 h-64 object-cover rounded-lg'
                                             />
-                                            <div className='flex-1'>
+                                            <div className='flex-1 mt-5'>
                                                 <p className='text-white/70 mb-4'>{project.desc}</p>
                                                 <p className='text-emerald-300'>
                                                     Stack: {project.devstack}
